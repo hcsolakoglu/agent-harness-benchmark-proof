@@ -1,0 +1,40 @@
+===== t01 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=0 AUDIT_OK 0.005597236999165034 
+===== t02 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=0 AUDIT_OK long_bytewise_s= 0.02677182399929734 
+===== t03 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=0 AUDIT_OK get5000_s= 0.001111061999836238 heap_before= None heap_after_updates= None 
+===== t04 =====
+public rc=0 PUBLIC_OK 
+hidden rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/hidden_eval/t04_hidden.py", line 5, in <module>     try: schedule({'a':['b'],'b':['a']})          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/harness_compare_20260911/dsh/t04/work/scheduler.py", line 51, in schedule     raise ValueError(f"cyclic dependencies detected among: {blocked!r}") ValueError: cyclic dependencies detected among: ['a', 'b']  During handling of the above exception, another exception occurred:  Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/hidden_eval/t04_hidden.py", line 6, in <module>     except ValueError as e: assert 'cycle' in str(e).lower()                                    ^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError 
+audit_v2 rc=0 AUDIT_OK 0.004110859001229983 
+===== t05 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=0 AUDIT_OK 
+===== t06 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t06.py", line 31, in <module>     else:raise AssertionError('loop accepted')          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: loop accepted 
+===== t07 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=124  
+===== t08 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t08.py", line 20, in <module>     assert newest([f'{huge}.0.0', '2.0.0'])==f'{huge}.0.0'            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/harness_compare_20260911/dsh/t08/work/versions.py", line 99, in newest     key = _parse(version)           ^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/harness_compare_20260911/dsh/t08/work/versions.py", line 75, in _parse     int(match.group("major")),     ^^^^^^^^^^^^^^^^^^^^^^^^^ ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5001 digits; use sys.set_int_max_str_digits() to increase the limit 
+===== t09 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=0 AUDIT_OK 0.033363839000230655 
+===== t10 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit_v2 rc=0 AUDIT_OK 

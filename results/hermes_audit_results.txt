@@ -1,0 +1,85 @@
+===== t01 =====
+public rc=0 PUBLIC_OK
+hidden rc=1 Traceback (most recent call last):
+  File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/hidden_eval/t01_hidden.py", line 11, in <module>
+    r=random.Random(seed); xs=[(r.randint(-10**9,10**9),r.randint(-10**9,10**9)) for _ in range(250)]; assert covered_length(xs)==ref(xs)
+                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+audit_v2 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t01.py", line 13, in <module>     assert covered_length(case)==ref(case),case            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: [(4, 1)] 
+status:
+ M intervals.py
+?? __pycache__/
+25	6	intervals.py
+
+===== t02 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=0 AUDIT_OK long_bytewise_s= 0.02291783399959968 
+status:
+ M stream.py
+52	6	stream.py
+
+===== t03 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=0 AUDIT_OK get5000_s= 0.0008127250002871733 heap_before= None heap_after_updates= None 
+status:
+ M cache.py
+68	9	cache.py
+
+===== t04 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=0 AUDIT_OK 0.006128625998826465 
+status:
+ M scheduler.py
+54	6	scheduler.py
+
+===== t05 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=0 AUDIT_OK 
+status:
+ M retry.py
+23	3	retry.py
+
+===== t06 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t06.py", line 8, in <module>     else:raise AssertionError(('should reject',p))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('should reject', 'a/../b') 
+status:
+ M safejoin.py
+81	1	safejoin.py
+
+===== t07 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=124  
+status:
+ M amap.py
+104	1	amap.py
+
+===== t08 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t08.py", line 12, in <module>     else:raise AssertionError(('invalid accepted',bad))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('invalid accepted', '1') 
+status:
+ M versions.py
+90	1	versions.py
+
+===== t09 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=0 AUDIT_OK 0.034925551000924315 
+status:
+ M window.py
+22	6	window.py
+
+===== t10 =====
+public rc=0 PUBLIC_OK
+hidden rc=0 HIDDEN_OK
+audit_v2 rc=0 AUDIT_OK 
+status:
+ M ledger.py
+57	4	ledger.py
+

@@ -1,0 +1,12 @@
+=== dsv4.1-flash_commandcode-direct ===
+t01 rc=0 EVAL_V3_OK {'elapsed_s': 0.0072338649988523684} 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.013353378002648242, 'bytewise_200k_s': 0.05328441900201142, 'scaling_ratio': 3.990332557907374} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 0.000942609000048833, 'hot_update_current_bytes': 3224, 'hot_update_peak_bytes': 3800} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.007253216001117835} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t06.py", line 13, in <module>     reject_valueerror(r,p)   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t06.py", line 8, in reject_valueerror     raise AssertionError(('should reject',p)) AssertionError: ('should reject', '') 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 6.830100028309971e-05, 'cancelled_children': 2} 
+t08 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t08.py", line 14, in <module>     else:raise AssertionError(('invalid accepted',bad))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('invalid accepted', '1٢.2.3') 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.033216586998605635} 
+t10 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t10.py", line 16, in <module>     expect(ValueError,{'a':5},[('add','a',amt)]); expect(ValueError,{'a':5},[('sub','a',amt)])     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t10.py", line 11, in expect     else:raise AssertionError(('no exception',ops))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('no exception', [('add', 'a', 1)]) 
+runner_rc=1

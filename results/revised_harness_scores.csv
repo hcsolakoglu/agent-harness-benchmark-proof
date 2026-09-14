@@ -1,0 +1,4 @@
+lane,t01,t02,t03,t04,t05,t06,t07,t08,t09,t10,total_500,hard_eval_v3_passes,hidden_v2_passes,elapsed_sum_s
+DeepSeek V4.1 Flash direct CommandCode,48,48,47.5,46.5,48,13.5,44.5,39.5,48.5,45,429.5,7,9,594
+DeepSeek V4.1 Flash Hermes CommandCode,35,44,48,47,48,39,44,37,49,48,439,7,9,437
+DeepSeek V4.1 Flash DeepSeek Harness CommandCode,48,45,42,46,48,44,43,40,46,48,450,9,10,1245

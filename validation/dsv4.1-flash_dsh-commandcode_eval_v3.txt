@@ -1,0 +1,12 @@
+=== dsv4.1-flash_dsh-commandcode ===
+t01 rc=0 EVAL_V3_OK {'elapsed_s': 0.008344327001395868} 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.023912189000839135, 'bytewise_200k_s': 0.2043541000020923, 'scaling_ratio': 8.54602228156197} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 0.0011264620006841142, 'hot_update_current_bytes': 5184, 'hot_update_peak_bytes': 6624} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.0042865760005952325} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=0 EVAL_V3_OK {'symlink_loop_diagnostic': 'accepted:/tmp/tmpznozaggj/root/loop/x'} 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 0.05037726000227849, 'cancelled_children': 1} 
+t08 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t08.py", line 21, in <module>     assert newest([f'{huge}.0.0','2.0.0'])==f'{huge}.0.0'            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/candidates/dsv4.1-flash_dsh-commandcode/t08/versions.py", line 99, in newest     key = _parse(version)           ^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/candidates/dsv4.1-flash_dsh-commandcode/t08/versions.py", line 75, in _parse     int(match.group("major")),     ^^^^^^^^^^^^^^^^^^^^^^^^^ ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5001 digits; use sys.set_int_max_str_digits() to increase the limit 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.03316757500215317} 
+t10 rc=0 EVAL_V3_OK 
+runner_rc=1

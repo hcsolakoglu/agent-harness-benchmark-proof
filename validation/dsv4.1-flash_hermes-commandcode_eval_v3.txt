@@ -1,0 +1,12 @@
+=== dsv4.1-flash_hermes-commandcode ===
+t01 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t01.py", line 18, in <module>     assert covered_length(case)==brute(case), case            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: [(4, 1)] 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.01961555399975623, 'bytewise_200k_s': 0.19169050600248738, 'scaling_ratio': 9.772372781562508} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 0.0007948960010253359, 'hot_update_current_bytes': 3360, 'hot_update_peak_bytes': 3936} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.005946419001702452} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t06.py", line 13, in <module>     reject_valueerror(r,p)   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t06.py", line 8, in reject_valueerror     raise AssertionError(('should reject',p)) AssertionError: ('should reject', 'a/../b') 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 0.050348619999567745, 'cancelled_children': 1} 
+t08 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/agent-harness-benchmark-proof-sanitized-20260914/evaluators/eval_v3/t08.py", line 14, in <module>     else:raise AssertionError(('invalid accepted',bad))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('invalid accepted', '1') 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.03816164599993499} 
+t10 rc=0 EVAL_V3_OK 
+runner_rc=1

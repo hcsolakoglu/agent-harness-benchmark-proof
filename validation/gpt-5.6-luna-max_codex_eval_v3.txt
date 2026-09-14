@@ -1,0 +1,12 @@
+=== gpt-5.6-luna-max_codex ===
+t01 rc=0 EVAL_V3_OK {'elapsed_s': 0.010791145999974106} 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.018514872001105687, 'bytewise_200k_s': 0.18271450600150274, 'scaling_ratio': 9.868526554792885} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 1.1849033630023769, 'hot_update_current_bytes': 1952, 'hot_update_peak_bytes': 2528} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.005745775000832509} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=0 EVAL_V3_OK {'symlink_loop_diagnostic': 'rejected:ValueError'} 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 6.852099977550097e-05, 'cancelled_children': 2} 
+t08 rc=0 EVAL_V3_OK 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.03459275400018669} 
+t10 rc=0 EVAL_V3_OK 
+runner_rc=0

@@ -1,0 +1,60 @@
+===== luna =====
+t01 rc=0 EVAL_V3_OK {'elapsed_s': 0.01193605899970862} 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.01889575200038962, 'bytewise_200k_s': 0.18589875300312997, 'scaling_ratio': 9.838124092615994} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 1.1712482580005599, 'hot_update_current_bytes': 1952, 'hot_update_peak_bytes': 2528} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.006017665000399575} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=0 EVAL_V3_OK {'symlink_loop_diagnostic': 'rejected:ValueError'} 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 6.487100108643062e-05, 'cancelled_children': 2} 
+t08 rc=0 EVAL_V3_OK 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.03390976000082446} 
+t10 rc=0 EVAL_V3_OK 
+
+===== glm =====
+t01 rc=0 EVAL_V3_OK {'elapsed_s': 0.007132946997444378} 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.013115931997162988, 'bytewise_200k_s': 0.05335108299914282, 'scaling_ratio': 4.067654743153807} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 0.0009291669994127005, 'hot_update_current_bytes': 5238520, 'hot_update_peak_bytes': 5238560} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.006125406998762628} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=0 EVAL_V3_OK {'symlink_loop_diagnostic': 'rejected:RuntimeError'} 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 6.838099943706766e-05, 'cancelled_children': 2} 
+t08 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t08.py", line 16, in <module>     try:newest([bad])         ^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/runs/glm53/t08/versions.py", line 38, in newest     return max(versions, key=_precedence_key, default=None)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/runs/glm53/t08/versions.py", line 16, in _precedence_key     match = _SEMVER_RE.fullmatch(version)             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ TypeError: expected string or bytes-like object, got 'NoneType'  During handling of the above exception, another exception occurred:  Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t08.py", line 18, in <module>     except Exception as e:raise AssertionError(('wrong exception',bad,type(e).__name__))                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('wrong exception', None, 'TypeError') 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.033878488997288514} 
+t10 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t10.py", line 16, in <module>     expect(ValueError,{'a':5},[('add','a',amt)]); expect(ValueError,{'a':5},[('sub','a',amt)])     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t10.py", line 11, in expect     else:raise AssertionError(('no exception',ops))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('no exception', [('add', 'a', 1)]) 
+
+===== direct =====
+t01 rc=0 EVAL_V3_OK {'elapsed_s': 0.0073498509991622996} 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.01351709899972775, 'bytewise_200k_s': 0.05348333499932778, 'scaling_ratio': 3.9567169701431495} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 0.0009359879986732267, 'hot_update_current_bytes': 3224, 'hot_update_peak_bytes': 3800} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.006990374000451993} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t06.py", line 13, in <module>     reject_valueerror(r,p)   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t06.py", line 8, in reject_valueerror     raise AssertionError(('should reject',p)) AssertionError: ('should reject', '') 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 6.438099808292463e-05, 'cancelled_children': 2} 
+t08 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t08.py", line 14, in <module>     else:raise AssertionError(('invalid accepted',bad))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('invalid accepted', '1٢.2.3') 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.03488740800094092} 
+t10 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t10.py", line 16, in <module>     expect(ValueError,{'a':5},[('add','a',amt)]); expect(ValueError,{'a':5},[('sub','a',amt)])     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t10.py", line 11, in expect     else:raise AssertionError(('no exception',ops))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('no exception', [('add', 'a', 1)]) 
+
+===== hermes =====
+t01 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t01.py", line 18, in <module>     assert covered_length(case)==brute(case), case            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: [(4, 1)] 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.019589635001466377, 'bytewise_200k_s': 0.18681352000203333, 'scaling_ratio': 9.536345112507172} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 0.0007877250027377158, 'hot_update_current_bytes': 3360, 'hot_update_peak_bytes': 3936} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.005828612000186695} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t06.py", line 13, in <module>     reject_valueerror(r,p)   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t06.py", line 8, in reject_valueerror     raise AssertionError(('should reject',p)) AssertionError: ('should reject', 'a/../b') 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 0.05033794399787439, 'cancelled_children': 1} 
+t08 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t08.py", line 14, in <module>     else:raise AssertionError(('invalid accepted',bad))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('invalid accepted', '1') 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.03308254399962607} 
+t10 rc=0 EVAL_V3_OK 
+
+===== dsh =====
+t01 rc=0 EVAL_V3_OK {'elapsed_s': 0.008042543999181362} 
+t02 rc=0 EVAL_V3_OK {'bytewise_50k_s': 0.02446582899938221, 'bytewise_200k_s': 0.20773295100298128, 'scaling_ratio': 8.490738286784673} 
+t03 rc=0 EVAL_V3_OK {'get5000_s': 0.001199152997287456, 'hot_update_current_bytes': 5184, 'hot_update_peak_bytes': 6624} 
+t04 rc=0 EVAL_V3_OK {'elapsed_s': 0.004181919997790828} 
+t05 rc=0 EVAL_V3_OK 
+t06 rc=0 EVAL_V3_OK {'symlink_loop_diagnostic': 'accepted:/tmp/tmpesbk_5t0/root/loop/x'} 
+t07 rc=0 EVAL_V3_OK {'lazy_consumed': 4, 'mapper_failure_s': 0.05035838499679812, 'cancelled_children': 1} 
+t08 rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v3/t08.py", line 21, in <module>     assert newest([f'{huge}.0.0','2.0.0'])==f'{huge}.0.0'            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/harness_compare_20260911/dsh/t08/work/versions.py", line 99, in newest     key = _parse(version)           ^^^^^^^^^^^^^^^   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/harness_compare_20260911/dsh/t08/work/versions.py", line 75, in _parse     int(match.group("major")),     ^^^^^^^^^^^^^^^^^^^^^^^^^ ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5001 digits; use sys.set_int_max_str_digits() to increase the limit 
+t09 rc=0 EVAL_V3_OK {'elapsed_s': 0.03353686300033587} 
+t10 rc=0 EVAL_V3_OK 
+

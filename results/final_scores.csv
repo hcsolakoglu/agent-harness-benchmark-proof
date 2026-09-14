@@ -1,0 +1,4 @@
+model,total_500,avg_5,correctness,spec_completeness,root_cause,algorithmic_efficiency,failure_robustness,verification,recovery,maintainability,discipline_integrity,agent_efficiency
+GPT-5.6 Luna Max,472.5,4.725,5.00,5.00,5.00,4.35,4.90,4.70,4.90,4.45,5.00,3.95
+GLM-5.3 Flash,445.5,4.455,4.75,4.70,5.00,4.75,4.50,4.50,4.50,4.35,4.45,3.05
+DeepSeek V4.1 Flash,429.5,4.295,4.30,4.20,4.90,4.45,4.20,4.10,4.25,4.00,4.55,4.00

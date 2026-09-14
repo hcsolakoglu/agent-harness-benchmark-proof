@@ -1,0 +1,581 @@
+{
+  "candidate_byte_identity": {
+    "passed": 50,
+    "total": 50
+  },
+  "eval_v3_core_identity": {
+    "passed": 10,
+    "total": 10
+  },
+  "eval_v3_pass_counts": {
+    "dsv4.1-flash_commandcode-direct": 7,
+    "dsv4.1-flash_dsh-commandcode": 9,
+    "dsv4.1-flash_hermes-commandcode": 7,
+    "glm-5.3-flash_commandcode": 8,
+    "gpt-5.6-luna-max_codex": 10
+  },
+  "expected_eval_v3_pass_counts": {
+    "dsv4.1-flash_commandcode-direct": 7,
+    "dsv4.1-flash_dsh-commandcode": 9,
+    "dsv4.1-flash_hermes-commandcode": 7,
+    "glm-5.3-flash_commandcode": 8,
+    "gpt-5.6-luna-max_codex": 10
+  },
+  "scores_match": true,
+  "trace_details": [
+    {
+      "export_json": 17,
+      "export_lines": 19,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 17,
+      "source_lines": 19,
+      "source_nonjson": 2,
+      "task": "t01"
+    },
+    {
+      "export_json": 26,
+      "export_lines": 28,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 26,
+      "source_lines": 28,
+      "source_nonjson": 2,
+      "task": "t02"
+    },
+    {
+      "export_json": 24,
+      "export_lines": 26,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 24,
+      "source_lines": 26,
+      "source_nonjson": 2,
+      "task": "t03"
+    },
+    {
+      "export_json": 18,
+      "export_lines": 20,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 18,
+      "source_lines": 20,
+      "source_nonjson": 2,
+      "task": "t04"
+    },
+    {
+      "export_json": 78,
+      "export_lines": 126,
+      "export_nonjson": 48,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 78,
+      "source_lines": 126,
+      "source_nonjson": 48,
+      "task": "t05"
+    },
+    {
+      "export_json": 26,
+      "export_lines": 28,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 26,
+      "source_lines": 28,
+      "source_nonjson": 2,
+      "task": "t06"
+    },
+    {
+      "export_json": 23,
+      "export_lines": 25,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 23,
+      "source_lines": 25,
+      "source_nonjson": 2,
+      "task": "t07"
+    },
+    {
+      "export_json": 47,
+      "export_lines": 50,
+      "export_nonjson": 3,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 47,
+      "source_lines": 50,
+      "source_nonjson": 3,
+      "task": "t08"
+    },
+    {
+      "export_json": 30,
+      "export_lines": 32,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 30,
+      "source_lines": 32,
+      "source_nonjson": 2,
+      "task": "t09"
+    },
+    {
+      "export_json": 32,
+      "export_lines": 34,
+      "export_nonjson": 2,
+      "lane": "gpt-5.6-luna-max_codex",
+      "ok": true,
+      "source_json": 32,
+      "source_lines": 34,
+      "source_nonjson": 2,
+      "task": "t10"
+    },
+    {
+      "export_json": 4165,
+      "export_lines": 4166,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 4165,
+      "source_lines": 4166,
+      "source_nonjson": 1,
+      "task": "t01"
+    },
+    {
+      "export_json": 5344,
+      "export_lines": 5345,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 5344,
+      "source_lines": 5345,
+      "source_nonjson": 1,
+      "task": "t02"
+    },
+    {
+      "export_json": 15645,
+      "export_lines": 15647,
+      "export_nonjson": 2,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 15645,
+      "source_lines": 15647,
+      "source_nonjson": 2,
+      "task": "t03"
+    },
+    {
+      "export_json": 1261,
+      "export_lines": 1262,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 1261,
+      "source_lines": 1262,
+      "source_nonjson": 1,
+      "task": "t04"
+    },
+    {
+      "export_json": 739,
+      "export_lines": 740,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 739,
+      "source_lines": 740,
+      "source_nonjson": 1,
+      "task": "t05"
+    },
+    {
+      "export_json": 18121,
+      "export_lines": 18122,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 18121,
+      "source_lines": 18122,
+      "source_nonjson": 1,
+      "task": "t06"
+    },
+    {
+      "export_json": 2799,
+      "export_lines": 2800,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 2799,
+      "source_lines": 2800,
+      "source_nonjson": 1,
+      "task": "t07"
+    },
+    {
+      "export_json": 15687,
+      "export_lines": 15688,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 15687,
+      "source_lines": 15688,
+      "source_nonjson": 1,
+      "task": "t08"
+    },
+    {
+      "export_json": 3161,
+      "export_lines": 3162,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 3161,
+      "source_lines": 3162,
+      "source_nonjson": 1,
+      "task": "t09"
+    },
+    {
+      "export_json": 6954,
+      "export_lines": 6955,
+      "export_nonjson": 1,
+      "lane": "glm-5.3-flash_commandcode",
+      "ok": true,
+      "source_json": 6954,
+      "source_lines": 6955,
+      "source_nonjson": 1,
+      "task": "t10"
+    },
+    {
+      "export_json": 593,
+      "export_lines": 594,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 593,
+      "source_lines": 594,
+      "source_nonjson": 1,
+      "task": "t01"
+    },
+    {
+      "export_json": 8420,
+      "export_lines": 8421,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 8420,
+      "source_lines": 8421,
+      "source_nonjson": 1,
+      "task": "t02"
+    },
+    {
+      "export_json": 16573,
+      "export_lines": 16574,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 16573,
+      "source_lines": 16574,
+      "source_nonjson": 1,
+      "task": "t03"
+    },
+    {
+      "export_json": 3603,
+      "export_lines": 3604,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 3603,
+      "source_lines": 3604,
+      "source_nonjson": 1,
+      "task": "t04"
+    },
+    {
+      "export_json": 2906,
+      "export_lines": 2907,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 2906,
+      "source_lines": 2907,
+      "source_nonjson": 1,
+      "task": "t05"
+    },
+    {
+      "export_json": 19622,
+      "export_lines": 19623,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 19622,
+      "source_lines": 19623,
+      "source_nonjson": 1,
+      "task": "t06"
+    },
+    {
+      "export_json": 18239,
+      "export_lines": 18240,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 18239,
+      "source_lines": 18240,
+      "source_nonjson": 1,
+      "task": "t07"
+    },
+    {
+      "export_json": 4486,
+      "export_lines": 4487,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 4486,
+      "source_lines": 4487,
+      "source_nonjson": 1,
+      "task": "t08"
+    },
+    {
+      "export_json": 5856,
+      "export_lines": 5857,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 5856,
+      "source_lines": 5857,
+      "source_nonjson": 1,
+      "task": "t09"
+    },
+    {
+      "export_json": 5766,
+      "export_lines": 5767,
+      "export_nonjson": 1,
+      "lane": "dsv4.1-flash_commandcode-direct",
+      "ok": true,
+      "source_json": 5766,
+      "source_lines": 5767,
+      "source_nonjson": 1,
+      "task": "t10"
+    },
+    {
+      "export_json": 13,
+      "export_lines": 13,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 13,
+      "source_lines": 13,
+      "source_nonjson": 0,
+      "task": "t01"
+    },
+    {
+      "export_json": 21,
+      "export_lines": 21,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 21,
+      "source_lines": 21,
+      "source_nonjson": 0,
+      "task": "t02"
+    },
+    {
+      "export_json": 21,
+      "export_lines": 21,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 21,
+      "source_lines": 21,
+      "source_nonjson": 0,
+      "task": "t03"
+    },
+    {
+      "export_json": 19,
+      "export_lines": 19,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 19,
+      "source_lines": 19,
+      "source_nonjson": 0,
+      "task": "t04"
+    },
+    {
+      "export_json": 18,
+      "export_lines": 18,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 18,
+      "source_lines": 18,
+      "source_nonjson": 0,
+      "task": "t05"
+    },
+    {
+      "export_json": 24,
+      "export_lines": 24,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 24,
+      "source_lines": 24,
+      "source_nonjson": 0,
+      "task": "t06"
+    },
+    {
+      "export_json": 20,
+      "export_lines": 20,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 20,
+      "source_lines": 20,
+      "source_nonjson": 0,
+      "task": "t07"
+    },
+    {
+      "export_json": 23,
+      "export_lines": 23,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 23,
+      "source_lines": 23,
+      "source_nonjson": 0,
+      "task": "t08"
+    },
+    {
+      "export_json": 19,
+      "export_lines": 19,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 19,
+      "source_lines": 19,
+      "source_nonjson": 0,
+      "task": "t09"
+    },
+    {
+      "export_json": 22,
+      "export_lines": 22,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_hermes-commandcode",
+      "ok": true,
+      "source_json": 22,
+      "source_lines": 22,
+      "source_nonjson": 0,
+      "task": "t10"
+    },
+    {
+      "export_json": 62,
+      "export_lines": 62,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 62,
+      "source_lines": 62,
+      "source_nonjson": 0,
+      "task": "t01"
+    },
+    {
+      "export_json": 86,
+      "export_lines": 86,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 86,
+      "source_lines": 86,
+      "source_nonjson": 0,
+      "task": "t02"
+    },
+    {
+      "export_json": 242,
+      "export_lines": 242,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 242,
+      "source_lines": 242,
+      "source_nonjson": 0,
+      "task": "t03"
+    },
+    {
+      "export_json": 81,
+      "export_lines": 81,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 81,
+      "source_lines": 81,
+      "source_nonjson": 0,
+      "task": "t04"
+    },
+    {
+      "export_json": 65,
+      "export_lines": 65,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 65,
+      "source_lines": 65,
+      "source_nonjson": 0,
+      "task": "t05"
+    },
+    {
+      "export_json": 227,
+      "export_lines": 227,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 227,
+      "source_lines": 227,
+      "source_nonjson": 0,
+      "task": "t06"
+    },
+    {
+      "export_json": 162,
+      "export_lines": 162,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 162,
+      "source_lines": 162,
+      "source_nonjson": 0,
+      "task": "t07"
+    },
+    {
+      "export_json": 72,
+      "export_lines": 72,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 72,
+      "source_lines": 72,
+      "source_nonjson": 0,
+      "task": "t08"
+    },
+    {
+      "export_json": 78,
+      "export_lines": 78,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 78,
+      "source_lines": 78,
+      "source_nonjson": 0,
+      "task": "t09"
+    },
+    {
+      "export_json": 78,
+      "export_lines": 78,
+      "export_nonjson": 0,
+      "lane": "dsv4.1-flash_dsh-commandcode",
+      "ok": true,
+      "source_json": 78,
+      "source_lines": 78,
+      "source_nonjson": 0,
+      "task": "t10"
+    }
+  ],
+  "trace_structure": {
+    "passed": 50,
+    "total": 50
+  }
+}

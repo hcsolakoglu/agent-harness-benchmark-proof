@@ -1,0 +1,40 @@
+===== t01 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=0 AUDIT_OK 0.005341002000932349 
+===== t02 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=0 AUDIT_OK long_bytewise_s= 0.01656611399812391 
+===== t03 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=0 AUDIT_OK get5000_s= 0.0009360180010844488 heap_before= None heap_after_updates= None 
+===== t04 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=0 AUDIT_OK 0.006985021998843877 
+===== t05 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=0 AUDIT_OK 
+===== t06 =====
+public rc=0 PUBLIC_OK 
+hidden rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/hidden_eval/t06_hidden.py", line 9, in <module>     else: raise AssertionError(p)           ^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ../escape 
+audit rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t06.py", line 8, in <module>     else:raise AssertionError(('should reject',p))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('should reject', '') 
+===== t07 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=0 AUDIT_OK 
+===== t08 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t08.py", line 12, in <module>     else:raise AssertionError(('invalid accepted',bad))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('invalid accepted', '1٢.2.3') 
+===== t09 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=0 AUDIT_OK 0.034095225997589296 
+===== t10 =====
+public rc=0 PUBLIC_OK 
+hidden rc=0 HIDDEN_OK 
+audit rc=1 Traceback (most recent call last):   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t10.py", line 14, in <module>     expect(ValueError,{'a':5},[('add','a',amt)])   File "/home/benchmark-user/benchmarks/flash-agent-bench-20260910/audit_20260911/eval_v2/t10.py", line 10, in expect     else:raise AssertionError(('no exception',ops))          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError: ('no exception', [('add', 'a', 1)]) 
