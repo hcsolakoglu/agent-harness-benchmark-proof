@@ -27,3 +27,7 @@ Runtime home directories, auth files, state databases, caches, smoke sessions, a
 This benchmark used one stochastic run per lane, so harness differences are strong observations rather than causal proof. Public tests were visible, while final/hidden evaluator cases were not. Once evaluator contents are shared with someone, they should no longer be treated as unseen holdout tests for that person.
 
 See `SANITIZATION.md` and `results/` for details.
+
+## License
+
+MIT, see [LICENSE](LICENSE). Third-party tasks, models or datasets referenced here keep their own licenses.
